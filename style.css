@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+    rgb(153, 125, 219),
+    rgb(245, 240, 240),
+    rgb(99, 86, 131)
+  );
+}
+#calculator {
+  height: 29rem;
+  width: 25rem;
+  background-color: cadetblue;
+  border: 0.1 solid rgb(8, 230, 238);
+  border-radius: 0.7rem;
+  margin: 0 auto;
+  position: relative;
+  top: 4rem;
+  /* border: 0.1rem solid black; */
+  box-shadow: 0.4em 0.3rem 0.3rem rgb(179, 184, 184),
+    -0.4em -0.3rem 0.3rem rgb(121, 124, 124);
+}
+#result {
+  height: 6rem;
+  width: 25rem;
+  background-color: rgb(197, 211, 199);
+  text-align: right;
+  border-radius: 0.7rem;
+}
+#histroy {
+  height: 3rem;
+  width: 25rem;
+  /* background-color: rgb(171, 228, 13); */
+  padding: 1rem;
+  font-size: 1rem;
+  color: rgb(43, 41, 36);
+}
+#output {
+  height: 3rem;
+  width: 25rem;
+  /* background-color: rgb(228, 92, 13); */
+  font-size: 1.7rem;
+  color: black;
+  padding: 1rem;
+}
+#keyboard {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  margin: 1rem;
+}
+.operator,
+.number,
+.empty {
+  height: 3rem;
+  width: 3rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  font-weight: bolder;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  padding: 0.3rem;
+}
+.empty {
+  background-color: cadetblue;
+}
+.operator {
+  font-size: 1.2rem;
+}
+.operator,
+.number {
+  cursor: pointer;
+}
+
+.number:hover {
+  background-color: yellow;
+}
+button:nth-child(1) {
+  background-color: rgb(226, 27, 27);
+}
+button:nth-child(4n) {
+  background-color: rgb(235, 25, 147);
+}
+button:nth-child(8n) {
+  background-color: rgb(12, 221, 12);
+}
+button:nth-child(12) {
+  background-color: rgb(14, 218, 201);
+}
